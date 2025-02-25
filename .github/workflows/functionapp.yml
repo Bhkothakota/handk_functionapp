@@ -23,6 +23,6 @@ jobs:
     - name: Deploy Azure Function App
       uses: azure/webapps-deploy@v2
       with:
-          app-name: "hklaw-backendwebapp-dev"
+          app-name: "hklaw-functionapp-chatbot-dev"
           publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
           package: "."
