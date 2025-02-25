@@ -21,10 +21,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Azure Login
-      uses: azure/login@v1
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
 
     - name: Deploy to Azure Function App
       uses: azure/functions-action@v1
