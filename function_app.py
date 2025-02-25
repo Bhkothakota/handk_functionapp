@@ -51,7 +51,7 @@ client = AzureOpenAI(
 )
 content = ""
 
-@app.blob_trigger(arg_name="myblob", path="handkblobstorage/{name}",
+@app.blob_trigger(arg_name="myblob", path="handk-container/{name}",
                                connection="AzureWebJobsStorage") 
 def blobtrigger(myblob: func.InputStream):
     logging.info(f"Python blob trigger function processed blob"
